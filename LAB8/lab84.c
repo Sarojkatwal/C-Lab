@@ -13,11 +13,13 @@ int main()
     {
       if(a[i]==' ')
       {
-        null++;
+        cha++;
+        if((a[i+1]<='z'&&a[i+1]>='a')|| (a[i+1]<='z'&&a[i+1]>='a'))
+           null++;
       }
     }
     printf("\nThe number of words=%d",null);
-    printf("\nThe number of character=%d",l);
+    printf("\nThe number of character=%d",l-cha);
     return 0;
 }
 
