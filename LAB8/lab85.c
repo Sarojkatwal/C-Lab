@@ -9,15 +9,10 @@ int main()
     gets(a);
     while(a[c]!='\0')
     {
-       if(a[c]==' ')
-       {
-           int t =c+1;
-          while(a[t]==' ' && a[t]!='\0')
-          {
-              c++;
-               t++;
-          }
-       }
+       while(a[c]==' ')
+        {
+            c++;
+        }
        if(a[c]=='.')
        {
            a[c]=':';

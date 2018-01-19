@@ -5,7 +5,7 @@
 int main()
 {
     char a[50];
-    int l,i,null=1,cha=0;
+    int l,i,null=1;
     printf("Write a sentence: \n");
     gets(a);
     l=strlen(a);
@@ -13,19 +13,11 @@ int main()
     {
       if(a[i]==' ')
       {
-        cha++;
         if((a[i+1]<='z'&&a[i+1]>='a')|| (a[i+1]<='z'&&a[i+1]>='a'))
            null++;
       }
     }
     printf("\nThe number of words=%d",null);
-    printf("\nThe number of character=%d",l-cha);
+    printf("\nThe number of character=%d",l);
     return 0;
 }
-
-
-
-
-
-
-cd
