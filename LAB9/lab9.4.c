@@ -1,4 +1,4 @@
-#include <Stdio.h>
+#include <stdio.h>
 #include <conio.h>
 struct company
     {
@@ -15,13 +15,13 @@ void read(struct company *c)
     scanf(" %[^\n]",c->address);
     printf("Enter the phone no of company: ");
     scanf("%lf",&c->phone);
-    printf("Enteer the number of the employee: ");
+    printf("Enter the number of the employee: ");
     scanf("%d",&c->noOfEmployee);
 }
 void display(struct company *c)
 {
     printf("The information about company is:\n");
-    printf("Name=%s\nAddress=%s\nPhone no=%.0lf\nno of Employee:%d",c->name,c->address,c->phone,c->noOfEmployee);
+    printf("Name=%s\nAddress=%s\nPhone no=%.0lf\nNo of Employee=%d",c->name,c->address,c->phone,c->noOfEmployee);
 }
 int main()
 {

@@ -8,12 +8,12 @@ struct student
     int age;
     float marks;
     };
-    void read(struct student a[10])
+    void read(struct student a[12])
  {
      int i;
     for(i=0;i<12;i++)
     {
-    printf("Enter the information of student %d\n",i+1);
+    printf("Student %d\n",i+1);
     printf("Name: ");
     scanf(" %[^\n]",(a[i].name));
     printf("Address: ");
@@ -39,9 +39,9 @@ for(i=0;i<12;i++)
  }
 int main()
 {
-    struct student b[10];
-    read(&b);
+    struct student b[12];
+    read(b);
     printf("The information about students is:\n\n");
-    display(&b);
+    display(b);
     return 0;
 }

@@ -22,15 +22,15 @@ complex sub(complex a,complex b)
 int main()
 {
     complex b,d,e,f;
-    printf("Enter 1st complex number a+bi:");
+    printf("Enter 1st complex number a+bi=");
     scanf("%f+%fi",&b.re,&b.im);
-    printf("Enter 2nd complex number a+bi:");
+    printf("Enter 2nd complex number a+bi=");
     scanf("%f+%fi",&d.re,&d.im);
     e=add(b,d);
-    printf("\nThe sum of two complex numbers is :\n");
+    printf("\nThe sum of two complex numbers is=");
     printf("%.2f+%.2fi\n",e.re,e.im);
      f=sub(b,d);
-     printf("\The difference of two complex numbers is :\n");
+     printf("The difference of two complex numbers is =");
     printf("%.2f+%.2fi",f.re,f.im);
     return 0;
 }
