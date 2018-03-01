@@ -1,0 +1,7 @@
+                               ABOUT
+
+This is a simple game made by Saroj kumar kawal, Shankar Subedi and Umesh Rai 
+as a project work.This game is made without the use of graphics.h header file.
+Use of array, pointer file handling , decision making statements and looping 
+statements are use here for building this project.This game is made mainly for
+entertainment purpose.

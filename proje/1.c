@@ -3,9 +3,18 @@
 #include <conio.h>
 #include <math.h>
 #include <string.h>
+#include<stdlib.h>
+#include<windows.h>
 int o=0,n;
 int readElements(char [],int [],int,int[],int *);
 void delete(char [],char b[],int ,int [],int );
+gotoxy(int x,int y)
+{
+    COORD c;
+    c.X=x;
+    c.Y=y;
+    SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE),c);
+}
 int main()
 {
     char an[20];
@@ -14,14 +23,18 @@ int main()
     if(strcmp(an,"sabin")==0)
     {
     system("cls");
-    printf("%70s-----------WELCOME------------\n"," ");
-    for(n=0;n<1000000000;n++)
+    gotoxy(50,0);
+    printf("-----------WELCOME------------\nloading...\n");
+    for(n=0;n<60;n++)
     {
-      if(n==1000000000/10)
-        printf("\n\nThis is love calculator by saroj katwal.");
-      if(n==1000000000/2)
-        printf("\n\nEnjoy it!!!!");
+    fflush(stdin);
+    printf("%c",178);
+    for(o=0;o<10000000;o++)
+    {
+
     }
+    }
+    o=0;
     system("cls");
     char y='y';
     do
@@ -29,7 +42,12 @@ int main()
     char a[40],b[40],c[40]="loves";
     int d[20],e[15];
     int i,j,l,k,q,u;
-    display();
+    display(40,0,50,4);
+    gotoxy(55,2);
+    printf("\n\n\n");
+    printf("Love Calculator");
+    gotoxy(90,4);
+    printf("\n");
     printf("Enter first name:\n");
     scanf(" %s",a);
     printf("Enter second name:\n");
@@ -181,12 +199,22 @@ else
 
 }
  }
-void display()
+  void display(int m,int n,int l,int b)
 {
-    printf("0------------------------------------------------------0------------------------------------------------------------0\n\n");
-    printf("%48sLOVE\n"," ");
-    printf("%45sCALCULATOR\n\n"," ");
-    printf("0------------------------------------------------------0------------------------------------------------------------0\n");
-}
+    int i,j;
+    system("color AB");
+    for(j=n;j<=n+b;j++)
+    {
+        for(i=m;i<=m+l;i++)
+        {
+            if(j==n||j==n+b||i==m||i==m+l)
+            {
+                gotoxy(i,j);
+                printf("%c",254);
+            }
+        }
+    }
+    system("color A4");
+ }
 
 

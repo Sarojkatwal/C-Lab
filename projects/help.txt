@@ -1,0 +1,6 @@
+                                               HELP
+This is a project on card game named SATRA.There are four players in the game.They can choose at most 5 cards.If the sum of their cards number
+is  more than seventen the player will be out.If the sum of the cards value  is exactly equal to 17 the the player is declared  as winner. If 
+sum of his cards number is near to 17 before withdrawing 5 cards he can pass the  turn to withdraw the card to the another  player.Similar 
+process is repeated for 4  players.At last sum  of card number the  players who  are not out is compared. All the result are lessthan 17.The 
+player  whose card's  value's sum is more is declared as winner.
