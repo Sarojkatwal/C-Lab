@@ -12,12 +12,8 @@ int main()
         printf("File cannot be created.");
         exit(1);
     }
-    printf("Enter name:");
-    scanf("%s",&name);
-    printf("Enter age:");
-    scanf("%d",&age);
-    printf("Enter height:");
-    scanf("%f",&height);
+    printf("Enter name,age and height:");
+    scanf("%s%d%f",&name,&age,&height);
     fprintf(a,"%s\t%d\t%f",name,age,height);
     printf("Reading from the file");
     rewind(a);

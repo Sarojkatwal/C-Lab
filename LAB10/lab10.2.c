@@ -20,5 +20,6 @@ int main()
     }
     printf("\nThe number of characters are %d.",i);
     fclose(a);
+    getch();
     return 0;
 }

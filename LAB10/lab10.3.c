@@ -4,9 +4,9 @@
 int main()
 {
     FILE *a;
-    char c[40],z;
+    char c[5][40],z;
     int i=0;
-    a=fopen("aaaa.txt","w+");
+    a=fopen("string.txt","w+");
     if(a==NULL)
     {
         printf("File cannot be created.");
@@ -15,17 +15,19 @@ int main()
     printf("The characters from file are:\n");
     printf("Enter the set of strings.Press enter at the begining to stop writing.\n");
     fflush(stdin);
-    while(strlen(gets(c))!=0)
+    for(i=0;i<5;i++)
     {
-       fputs(c,a);
-       fputs("\n",a);
+        gets(c+i);
+        fputs(c+i,a);
     }
    printf("The set of the strings from the file is:\n");
    rewind(a);
-   while((z=fgetc(a))!=EOF)
-   {
-       putchar(z);
-   }
+   fflush(stdin);
+for(i=0;i<5;i++)
+    {
+        fgets(c,40,a);
+       puts(c);
+    }
     fclose(a);
     return 0;
 }
