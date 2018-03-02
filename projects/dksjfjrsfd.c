@@ -172,7 +172,7 @@ int main()
      if(sum4>sum1&&sum4>sum2&&sum4>sum3)
             printf("FOURTH PLAYER WON THE GAME::");
             getch();
-            goto www;
+            exit(1);
     }
 ww2:
   {
